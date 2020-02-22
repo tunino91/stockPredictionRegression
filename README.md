@@ -1,4 +1,4 @@
-# Linear Regression Stock Prediction
+# Stock Prediction with Linear Regression
 
 ## Used Features
 1) Adj. Close: Close price of the day
