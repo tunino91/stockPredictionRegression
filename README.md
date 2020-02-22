@@ -10,4 +10,5 @@
 All the NaNs are filled with -9999 to count as an outlier by the sklearn LinearRegression object's "fit" function.
 
 ## Adjustable Parameter
-You can determine how much of historical data you want to incorparate in your predictions by changing the ***forecast_out*** variable
+* Ticker is currently set for GOOGL, you can pick another as you please.
+* You can determine how much of historical data you want to incorparate in your predictions by changing the ***forecast_out*** variable
