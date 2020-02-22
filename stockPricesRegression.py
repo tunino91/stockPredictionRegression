@@ -2,7 +2,9 @@ import pandas as pd
 import quandl, math, datetime
 
 import numpy as np
-from sklearn import preprocessing, cross_validation, svm
+# from sklearn import preprocessing, cross_validation, svm
+from sklearn import preprocessing, svm
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt 
 from matplotlib import style
@@ -48,7 +50,7 @@ X = preprocessing.scale(X)  # Scale function scales your features between [-1,1]
 
 y = np.array(dataFrame['label'])
 
-X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size = 0.2 )# It is going to take
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2 )# It is going to take
 																							# our features and labels
 																							# shuffle them up while keeping 
 																							# Xs' and ys' still connected
@@ -60,7 +62,7 @@ classifier.fit(X_train,y_train) 			# We use train set to fit our data to our cla
  											# We can use this classifier to predict into the future
 accuracy = classifier.score(X_test,y_test)	# But first, we should probably test it right? and see what our accurcy is
 											# Accuracy is the squared error,cuz we used Linear Regression.
-print 'Accuracy: ', accuracy
+print('Accuracy: ', accuracy)
  
 
 
