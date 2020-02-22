@@ -7,7 +7,7 @@
 4) Adj. Volume: Daily traded volume
 
 ## Cleaning
-All the NaNs are filled with -9999 to count as an outlier by the sklearn LinearRegression object's "fit" function.
+* All the NaNs are filled with -9999 to count as an outlier by the sklearn LinearRegression object's "fit" function.
 
 ## Adjustable Parameter
 * Ticker is currently set for GOOGL, you can pick another as you please.
